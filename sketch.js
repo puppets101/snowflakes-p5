@@ -24,6 +24,13 @@ function draw() {
   });
 }
 
+function mouseClicked() {
+  const snowflakesTotal = Math.floor(window.innerWidth / 10);
+  for (i = 0; i < snowflakesTotal; i++) {
+    snowflakes.push(new Snowflake());
+  }
+}
+
 class Snowflake {
   constructor() {
     // Position where each snowflake is created
