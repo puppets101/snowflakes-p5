@@ -18,7 +18,7 @@ function draw() {
   background("brown");
   imageMode(CENTER);
   image(img, innerWidth / 2, innerHeight / 2, 400, 400);
-  snowflakes.forEach((snow, index) => {
+  snowflakes.forEach((snow) => {
     snow.update();
     snow.draw();
   });
